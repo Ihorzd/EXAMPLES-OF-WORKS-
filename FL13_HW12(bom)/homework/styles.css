@@ -1,0 +1,12 @@
+.List-book{
+    margin: 5px;
+}
+.button-edit{
+margin-left: 10px;
+}
+.book-edit{
+margin: 15px;
+}
+li{
+    list-style-type: none;
+}

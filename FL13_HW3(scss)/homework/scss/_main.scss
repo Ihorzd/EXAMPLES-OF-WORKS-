@@ -1,0 +1,230 @@
+// Write your styles here
+*{font-family:  $font_style;}
+@mixin textmix ($fontsize:30px, $weight:bolder){
+    color: $color;
+    font-weight: $weight;
+    font-family:  'Source Sans Pro', sans-serif;
+    font-size: $fontsize;
+    
+}
+@mixin bg-rectangle($width, $height, $bottom:0,$padding_bottom:0,$right:inherit) {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color:map-get($All-Color, "rectg" );
+    width: $width;
+    height: $height;
+    bottom: $bottom;
+    right: $right;
+    margin-bottom: $padding_bottom;
+    
+    
+  }
+
+@mixin marg_txt_centr($marg:0px) {
+    margin-left:$marg ;
+    margin-right: $marg;
+}
+@mixin Button_mixin {
+    width: 9vw;
+    height: 3vw;
+    background-color: map-get($All-Color , "button" );
+    border: none;
+    color: white;
+}
+@mixin Link {
+    margin-left: 8vw;
+    color: white;
+    font-family: $font_style_link;
+    
+}
+.header{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-image:$header_backround;
+    background-repeat: no-repeat;
+    background-size: 100vw 55em;
+    background-position: center;
+    height: 40em;
+    border-bottom-right-radius: 30em 20em;
+}
+
+
+
+body{
+    margin: 0;
+    width: 100%;
+    background-color:map-get( $All-Color, "main_bacround" );
+
+}
+
+
+
+.header-wrap{
+    margin-left: 10vw;
+    width: 50vw;
+    color: $header_color_txt;
+    button{
+        margin-top: 2vw;
+        @include Button_mixin();
+    }
+  
+}
+
+.login{
+    @include Link;
+    
+
+}
+.landing-logo{
+    margin-top: 5vh;
+    display: inline-flex;
+    img{
+        width: 4.5vw;
+        height: 4.5vw;
+    }
+
+    p{
+        margin-top: 0;
+        margin-left: 2vw;
+        font-size: 30px;
+        font-weight: bold;
+        font-family:  $font_style;
+        color: $color;
+    }
+
+    span{
+        margin-top: 0em;
+        display: block;
+        font-size: 10px;
+        text-align: center;
+    }
+}
+    .header_heading{
+        font-size: 70px;
+        font-weight: bolder;
+        font-family:  'Source Sans Pro', sans-serif;
+        margin-top: 0;
+        position: relative;
+        z-index: 1;
+        &::before {
+            @include bg-rectangle(300px, 8vh, 0, 2vh);
+          }
+    }
+
+.header_text{
+    font-family:  $font_style;
+}
+
+
+
+.section_text{
+    @include textmix;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    &::before{
+    @include bg-rectangle(140px, 6vh,1vh ,0,510px );
+    }
+
+}
+.section_card_wrap{
+  @include marg_txt_centr(20vw)
+}
+.section_card{
+    display: flex;
+    padding: 1vw;
+    margin:1vw;
+    background-color: $section_card_backround;
+    border-radius: 5px;
+    @extend .header_text;
+}
+
+
+
+.section_card_right_container{
+   @include marg_txt_centr(5vw);
+
+    .section_card_heading{
+        text-align: center;
+        font-weight: bolder;
+        color: white;
+        font-family: sans-serif;
+
+    }
+    .section_card_text{
+        text-align: justify;
+        color: $section_card_color_txt;
+    }
+    .section_link{
+      @extend .login;
+    }
+    
+
+}
+
+
+.section_banner{
+    @include marg_txt_centr(20vw);
+    margin-top: 15vh;
+    background: linear-gradient(90deg,$liner_gradient_banner);
+    border-radius: 4px;
+    display: flex;
+    position:relative ;
+    height: 100px;
+
+}
+.section_banner_text_wrap{
+    @include marg_txt_centr(5vw);
+}
+    .section_banner_heading{
+    @include textmix(20px,  );
+    margin-top: 7px;
+    &::before{
+        @include bg-rectangle(47px,5vh ,9vh ,0.5vh ,590px );
+    }
+}
+.section_banner_text{
+    margin-top: 7px;
+    color:#ddddde ;
+}
+.section_banner_button{
+    margin-left: 9vw;
+    margin-top: 5vh;
+    color: white;
+    @include Button_mixin;
+   
+}
+footer{
+    background-color: $footer_backround_txt;
+    height: 25vh;
+    position: relative;
+    margin-top: -7vh;
+    
+}
+.section_banner{z-index: 2;}
+footer{z-index: 1;}
+
+.footer-wrap{
+    display: flex;
+    padding-top: 10vh;
+    margin-left: 5vw;
+
+}
+.footer_logo.landing-logo{
+    margin-top: 0;
+    p{
+    color: $section_card_color_txt;
+    }
+}
+.footer_text{
+   margin-top: 0;
+   margin-left: 10vw;
+   width: 26vw;
+   color:$section_card_color_txt ;
+}
+.footer-cr{
+    margin-left: 20vw;
+    color:$section_card_color_txt ;
+}

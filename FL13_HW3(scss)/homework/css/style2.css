@@ -1,0 +1,194 @@
+* {
+  font-family: "Fresca", sans-serif; }
+
+.header {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-image: url("../img/m-h-night.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 55em;
+  background-position: center;
+  height: 40em;
+  border-bottom-right-radius: 30em 20em; }
+
+body {
+  margin: 0;
+  width: 100%;
+  background-color: #1b1e2a; }
+
+.header-wrap {
+  margin-left: 10vw;
+  width: 50vw;
+  color: white; }
+  .header-wrap button {
+    margin-top: 2vw;
+    width: 9vw;
+    height: 3vw;
+    background-color: #e4ae00;
+    border: none;
+    color: white; }
+
+.login, .section_card_right_container .section_link {
+  margin-left: 8vw;
+  color: white;
+  font-family: "Hind", sans-serif; }
+
+.landing-logo {
+  margin-top: 5vh;
+  display: inline-flex; }
+  .landing-logo img {
+    width: 4.5vw;
+    height: 4.5vw; }
+  .landing-logo p {
+    margin-top: 0;
+    margin-left: 2vw;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Fresca", sans-serif;
+    color: white; }
+  .landing-logo span {
+    margin-top: 0em;
+    display: block;
+    font-size: 10px;
+    text-align: center; }
+
+.header_heading {
+  font-size: 70px;
+  font-weight: bolder;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 0;
+  position: relative;
+  z-index: 1; }
+  .header_heading::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: #ff4d30;
+    width: 300px;
+    height: 8vh;
+    bottom: 0;
+    right: inherit;
+    margin-bottom: 2vh; }
+
+.header_text, .section_card {
+  font-family: "Fresca", sans-serif; }
+
+.section_text {
+  color: white;
+  font-weight: bolder;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  z-index: 1; }
+  .section_text::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: #ff4d30;
+    width: 140px;
+    height: 6vh;
+    bottom: 1vh;
+    right: 510px;
+    margin-bottom: 0; }
+
+.section_card_wrap {
+  margin-left: 20vw;
+  margin-right: 20vw; }
+
+.section_card {
+  display: flex;
+  padding: 1vw;
+  margin: 1vw;
+  background-color: #383d4f;
+  border-radius: 5px; }
+
+.section_card_right_container {
+  margin-left: 5vw;
+  margin-right: 5vw; }
+  .section_card_right_container .section_card_heading {
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    font-family: sans-serif; }
+  .section_card_right_container .section_card_text {
+    text-align: justify;
+    color: #ddddde; }
+
+.section_banner {
+  margin-left: 20vw;
+  margin-right: 20vw;
+  margin-top: 15vh;
+  background: linear-gradient(90deg, #dda301, #932951);
+  border-radius: 4px;
+  display: flex;
+  position: relative;
+  height: 100px; }
+
+.section_banner_text_wrap {
+  margin-left: 5vw;
+  margin-right: 5vw; }
+
+.section_banner_heading {
+  color: white;
+  font-weight: bolder;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  margin-top: 7px; }
+  .section_banner_heading::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: #ff4d30;
+    width: 47px;
+    height: 5vh;
+    bottom: 9vh;
+    right: 590px;
+    margin-bottom: 0.5vh; }
+
+.section_banner_text {
+  margin-top: 7px;
+  color: #ddddde; }
+
+.section_banner_button {
+  margin-left: 9vw;
+  margin-top: 5vh;
+  color: white;
+  width: 9vw;
+  height: 3vw;
+  background-color: #e4ae00;
+  border: none;
+  color: white; }
+
+footer {
+  background-color: #383d4f;
+  height: 25vh;
+  position: relative;
+  margin-top: -7vh; }
+
+.section_banner {
+  z-index: 2; }
+
+footer {
+  z-index: 1; }
+
+.footer-wrap {
+  display: flex;
+  padding-top: 10vh;
+  margin-left: 5vw; }
+
+.footer_logo.landing-logo {
+  margin-top: 0; }
+  .footer_logo.landing-logo p {
+    color: #ddddde; }
+
+.footer_text {
+  margin-top: 0;
+  margin-left: 10vw;
+  width: 26vw;
+  color: #ddddde; }
+
+.footer-cr {
+  margin-left: 20vw;
+  color: #ddddde; }

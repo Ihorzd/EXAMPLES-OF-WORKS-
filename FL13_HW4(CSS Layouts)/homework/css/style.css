@@ -1,0 +1,140 @@
+body, header{
+    padding: 0;
+    margin: 0;
+}
+.head_nav_bar{
+   display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: baseline;
+    color: #777 ;
+    font-family: serif;
+    height: 10vh;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
+}
+.Link_nav_bar{
+    margin-right:15vw;
+}
+nav h3{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    flex: 2;
+    margin-left: 3vw;
+    margin-bottom: 0;
+
+}
+nav a{
+    width: 50px;
+    justify-content: center;
+    margin-left: 3vw;
+    color: #777 ;
+    text-decoration: none;
+    flex: 5;
+}
+nav a:hover{
+    color: #bfba55;
+}
+.head_img{
+    display: flex;
+ 
+}
+
+
+.content_on_img{
+  height: 90vh;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), url('../img/home-bg.jpg') ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.content_on_img h2{
+    color: #FFFFFF ;
+    font-size: 5vw;
+    padding-top: 20vh;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family:serif;
+}
+.content_on_img p{
+    color: #bfba55;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.content_on_img button{
+    margin-top: 4vh;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background-color: white;
+    width: 12vw;
+    height: 9vh;
+    border-radius: 30px;
+    border: none;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color:#777 ;
+    font-size: 1vw;
+    
+}
+section{
+    width: 70vw;
+    margin-top: 15vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+.blog_img{
+width: 100%;
+}
+.blog_header{
+    width: 100%;
+}
+.info_blog_person{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #777;
+}
+.person_img{
+   width: 30px;
+   height: 30px;
+   border-radius: 20px;
+}
+.person_name,
+.date_publication,
+.icon_coment{
+    margin-left: 1vw;
+}
+.description{
+    color:#777 ;
+    line-height: 4vh;
+}
+.button_continue{
+    width: 13vw;
+    height: 7vh;
+    margin-bottom: 20vh;
+    margin-top: 4vh;
+    background-color: white;
+    border-radius: 20px;
+    border: solid 1px #777;
+    color:#777 ;
+    font-weight: bolder;
+    font-size: 1vw;
+}
+footer{
+    width: 100vw;
+    background-color: #000;
+    display: flex;
+}
+footer h2{
+    color: white;
+}
+footer p{
+    color: #777;
+}
+.about_company,
+.contact_company{
+    width: 30vw;
+    margin-left: 15vw;
+}
